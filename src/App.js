@@ -10,8 +10,8 @@ function App() {
     useEffect(() => {
         Pusher.logToConsole = true;
 
-        const pusher = new Pusher('25291c0752d6089a660c', {
-            cluster: 'eu'
+        const pusher = new Pusher('', {
+            cluster: ''
         });
 
         const channel = pusher.subscribe('chat');
